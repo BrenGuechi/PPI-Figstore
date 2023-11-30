@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Figstore.mx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" async></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top sticky-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Figstore.mx</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">Carrito de compras</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Ejemplo de Responsividad con Imágenes para la Tienda de Figuras -->
+<div class="container-fluid">
+    <h1 class="display-1">Figuras Disponibles</h1>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+            <img class="img-fluid rounded" src="zoro.webp" alt="Figura Zoro">
+            <div class="text-center">
+                <h4>Figura Zoro</h4>
+                <p>Precio: USD$20.00</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Zoro', 20.00)">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+            <img class="img-fluid rounded" src="lara.jpg" alt="Figura Lara">
+            <div class="text-center">
+                <h4>Figura Lara</h4>
+                <p>Precio: USD$25.00</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Lara', 25.00)">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+            <img class="img-fluid rounded" src="kenobi.webp" alt="Figura Kenobi">
+            <div class="text-center">
+                <h4>Figura Kenobi</h4>
+                <p>Precio: USD$30.00</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Kenobi', 30.00)">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+            <img class="img-fluid rounded" src="nezuko.webp" alt="Figura Nezuko">
+            <div class="text-center">
+                <h4>Figura Nezuko</h4>
+                <p>Precio: USD$28.00</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Nezuko', 28.00)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        function agregarAlCarrito(producto, precio) {
+            // Puedes implementar lógica para agregar el producto al carrito
+            console.log(`Producto agregado al carrito: ${producto} - Precio: $${precio}`);
+        }
+    </script>
+</body>
+</html>
