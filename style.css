@@ -1,7 +1,20 @@
 body{
-    background-color: rgb(191, 203, 216);
+    background-color: aliceblue;
+    /* background: #9e9ec34c; */ 
+    background-size: 66.5%;
+    background-repeat: repeat-x;
+    
 }
 
 footer{
-    
+    font-style: oblique;
 }
+
+#mario{
+    background: rgb(57, 61, 69);
+    width: auto;
+    height: auto;
+    margin: 0px 50px;
+    color: aliceblue;
+}
+
