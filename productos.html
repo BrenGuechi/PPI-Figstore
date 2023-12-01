@@ -9,9 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" async></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top sticky-bottom">
+    <!-- BARRA DE NAVEGACION -->
+    <section>
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Figstore.mx</a>
+          
+          <a class="navbar-brand" href="index.html">
+            <img src="navlogo.jpg" alt="Inicio" width="200">
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -26,21 +33,26 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Acerca de</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="carrito.html">Carrito de compras</a>
+                <a class="nav-link" href="colaboradores.html">Colaboradores</a>
               </li>
             </ul>
           </div>
         </div>
-    </nav>
+      </nav>
+    </section>
 
     <!-- Ejemplo de Responsividad con Imágenes para la Tienda de Figuras -->
 <div class="container-fluid">
@@ -48,7 +60,7 @@
     <div class="row">
         <!-- Producto 1 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded" src="zoro.webp" alt="Figura Zoro">
+            <img class="img-fluid rounded" src="zoro3.webp" alt="Figura Zoro" width="">
             <div class="text-center">
                 <h4>Figura Zoro</h4>
                 <p>Precio: USD$20.00</p>
@@ -58,7 +70,7 @@
 
         <!-- Producto 2 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded" src="lara.jpg" alt="Figura Lara">
+            <img class="img-fluid rounded" src="lara.jpg" alt="Figura Lara" >
             <div class="text-center">
                 <h4>Figura Lara</h4>
                 <p>Precio: USD$25.00</p>
@@ -68,23 +80,37 @@
 
         <!-- Producto 3 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded" src="kenobi.webp" alt="Figura Kenobi">
+            <img class="img-fluid rounded img" src="reach2.jpg" alt="Figura Halo: Reach">
             <div class="text-center">
-                <h4>Figura Kenobi</h4>
+                <h4>Figura Halo: Reach</h4>
                 <p>Precio: USD$30.00</p>
-                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Kenobi', 30.00)">Agregar al carrito</button>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Halo: Reach', 30.00)">Agregar al carrito</button>
             </div>
         </div>
 
         <!-- Producto 4 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded" src="nezuko.webp" alt="Figura Nezuko">
+            <img class="img-fluid rounded" src="nezuko3.webp" alt="Figura Nezuko">
             <div class="text-center">
                 <h4>Figura Nezuko</h4>
                 <p>Precio: USD$28.00</p>
                 <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Nezuko', 28.00)">Agregar al carrito</button>
             </div>
         </div>
+
+         <!-- Producto 5 -->
+         <div class="col-lg-3 col-md-6 mb-3">
+          <img class="img-fluid rounded" src="noctis.jpg" alt="Figura Noctis" >
+          <div class="text-center">
+              <h4>Figura Noctis</h4>
+              <p>Precio: USD$28.00</p>
+              <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Noctis', 40.00)">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <footer>
+          <p>Brenda Escobedo, Pablo de Robles 2023 Todos los derechos reservados</p>
+        </footer>
     </div>
 </div>
 

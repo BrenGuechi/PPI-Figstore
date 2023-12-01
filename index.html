@@ -23,10 +23,13 @@
     <!-- BARRA DE NAVEGACION -->
     <section>
       <nav
-        class="navbar navbar-expand-md navbar-dark bg-dark fixed-top sticky-bottom"
+        class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Figstore.mx</a>
+          
+          <a class="navbar-brand" href="index.html">
+            <img src="navlogo.jpg" alt="Inicio" width="200">
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,7 +44,10 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Acerca de</a>
@@ -59,7 +65,7 @@
       </nav>
     </section>
 
-    <section class="bg-dark">
+    <section >
       <div class="container mt-1 ">
       <img
         src="portadaMario.jpg"
@@ -68,20 +74,22 @@
       />
       <h1>Bienvenido a Figstore.mx</h1>
       <p>
+
         Descubre la mejor colección de figuras de acción en Figstore.mx.
-        Encuentra tus personajes favoritos y dale vida a tus colecciones.
+        Encuentra tus personajes favoritos y <span>colecciona momentos épicos</span>.
       </p>
     </section>
     
-
+    <br><br>
+    
       <!-- Sección de destacados -->
       <section>
         <div class="container-fluid">
-          <h2 class="display-3 justify-content-center">Descubre nuestros productos destacados</h2>
+          <h2 class="display-3 justify-content-center text-center">Descubre nuestros productos destacados</h2> <br>
           <div class="row bg-dark justify-content-center">
             <div
           id="carouselExampleIndicators"
-          class="carousel slide col-8 mb-4 mt-4"
+          class="carousel slide col-3 mb-4 mt-4"
           data-bs-ride="carousel"
         >
         <div class="carousel-indicators">
@@ -89,7 +97,7 @@
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              class="active"
+              class="active "
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -109,16 +117,26 @@
   
         <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="zoro.webp" class="d-block w-70" alt="Destacado 1" />
-              <p>Figura Zoro</p>
+              <img
+              class="img-fluid rounded"
+              src="zoro3.webp" alt="Destacado 1" width="350"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Figura Zoro</h5>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="lara.jpg" class="d-block w-70" alt="Destacado 2" />
-              <p>Figura Lara</p>
+              <img class="img-fluid rounded" src="lara.jpg" alt="Destacado 2" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Figura Lara</h5>
+              </div>
+             
             </div>
             <div class="carousel-item">
-              <img src="kenobi.webp" class="d-block w-70" alt="Destacado 3"/>
-              <p>Figura Kenobi</p>
+              <img src="reach2.jpg" class="img-fluid rounded" alt="Destacado 3"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Figura Halo: Reach</h5>
+              </div>
+              
             </div>
           </div>
           <button
@@ -145,15 +163,13 @@
       </section>
       
 
-    <div class="mt-4">
-      <p>
-        ¡Descubre la colección completa ahora!
-        <a href="productos.html" class="btn btn-primary">Ver más</a>
-      </p>
-    </div>
-
+      <div class="mt-4 text-center">
+        <a href="productos.html" class="btn btn-outline-primary btn-lg btn-block">Ver más</a>
+      </div>
+      
+<br><br>
     <div class="container-fluid">
-      <p class="display-6">
+      <p class="display-5 justify-content-center text-center">
         ¡Suscribete a nuestro Newsletter y recibe un cupón de 5% de descuento en
         tu siguiente compra!
       </p>
@@ -198,9 +214,9 @@
           </form>
         </div>
       </div>
-
+      <br><br>
       <footer>
-        <p>Brenda Escobedo 2023 Todos los derechos reservados</p>
+        <p>Brenda Escobedo, Pablo de Robles 2023 Todos los derechos reservados</p>
       </footer>
     </div>
   </body>
