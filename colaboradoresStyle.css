@@ -1,0 +1,14 @@
+.caja{
+    background-color: rgb(57, 61, 69);    
+    background-size: 100%;
+    margin: 1% ;
+    color: aliceblue;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+a:hover{
+    transform: scale(1.1);
+}

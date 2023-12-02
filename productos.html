@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos - Figstore.mx</title>
-    <link rel="icon" type="image/jpg" href="Logo.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="icon" type="image/jpg" href="Logo.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="productosStyle.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" async></script>
-</head>
-<body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </head>
+  <body>
     <!-- BARRA DE NAVEGACION -->
     <section>
-      <nav
-        class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
-      >
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          
           <a class="navbar-brand" href="index.html">
-            <img src="navlogo.jpg" alt="Inicio" width="200">
+            <img src="navlogo.jpg" alt="Inicio" width="200" />
           </a>
           <button
             class="navbar-toggler"
@@ -34,13 +41,15 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de</a>
+                <a class="nav-link" href="404.html">Acerca de</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -54,75 +63,189 @@
         </div>
       </nav>
     </section>
-<br><br><br>
+    <br /><br /><br />
+
     <!-- Ejemplo de Responsividad con Imágenes para la Tienda de Figuras -->
-<div class="container-fluid justify-content-center text-center">
-    <h1 class="display-1">Figuras Disponibles</h1>
-    <div class="row">
-      <br><br>
+    <div class="container-fluid justify-content-center text-center">
+      <h1 class="display-1">Figuras Disponibles</h1>
+      <br />
+      <div class="row">
+        <br /><br />
         <!-- Producto 1 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded" src="zoro3.webp" alt="Figura Zoro">
-            <div class="text-center">
-                <h4>Figura Zoro</h4>
-                <p>Precio: USD$20.00</p>
-                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Zoro', 20.00)">Agregar al carrito</button>
-            </div>
+          <img
+            class="img-fluid rounded img-thumbnail"
+            src="zoro3.webp"
+            width="350"
+            alt="Figura Zoro"
+          />
+          <div class="text-center">
+            <h4>Figura Zoro</h4>
+            <p>Precio: USD$20.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Zoro', 20.00)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
         </div>
 
         <!-- Producto 2 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded" src="lara.jpg" alt="Figura Lara" >
-            <div class="text-center">
-                <h4>Figura Lara</h4>
-                <p>Precio: USD$25.00</p>
-                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Lara', 25.00)">Agregar al carrito</button>
-            </div>
+          <img
+            class="img-fluid rounded img-thumbnail"
+            src="lara2.webp"
+            width="350"
+            alt="Figura Lara"
+          />
+          <div class="text-center">
+            <h4>Figura Lara</h4>
+            <p>Precio: USD$25.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Lara', 25.00)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
         </div>
 
         <!-- Producto 3 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded img" src="reach2.jpg" alt="Figura Halo: Reach">
-            <div class="text-center">
-                <h4>Figura Halo: Reach</h4>
-                <p>Precio: USD$30.00</p>
-                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Halo: Reach', 30.00)">Agregar al carrito</button>
-            </div>
+          <img
+            class="img-fluid rounded img-thumbnail"
+            width="350"
+            src="reach2.jpg"
+            alt="Figura Halo: Reach"
+          />
+          <div class="text-center">
+            <h4>Figura Halo: Reach</h4>
+            <p>Precio: USD$30.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Halo: Reach', 30.00)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
         </div>
 
         <!-- Producto 4 -->
         <div class="col-lg-3 col-md-6 mb-3">
-            <img class="img-fluid rounded" src="nezuko3.webp" alt="Figura Nezuko">
-            <div class="text-center">
-                <h4>Figura Nezuko</h4>
-                <p>Precio: USD$28.00</p>
-                <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Nezuko', 28.00)">Agregar al carrito</button>
-            </div>
-        </div>
-
-         <!-- Producto 5 -->
-         <div class="col-lg-3 col-md-6 mb-3">
-          <img class="img-fluid rounded" src="noctis.jpg" alt="Figura Noctis" >
+          <img
+            class="img-fluid rounded img-thumbnail"
+            src="nezuko3.webp"
+            width="350"
+            alt="Figura Nezuko"
+          />
           <div class="text-center">
-              <h4>Figura Noctis</h4>
-              <p>Precio: USD$28.00</p>
-              <button class="btn btn-primary" onclick="agregarAlCarrito('Figura Noctis', 40.00)">Agregar al carrito</button>
+            <h4>Figura Nezuko</h4>
+            <p>Precio: USD$28.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Nezuko', 28.00)"
+            >
+              Agregar al carrito
+            </button>
           </div>
         </div>
 
-        <footer>
-          <p>Brenda Escobedo, Pablo de Robles 2023. Todos los derechos reservados</p>
-        </footer>
+        <!-- Producto 5 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+          <img
+            class="img-fluid rounded img-thumbnail"
+            width="350"
+            src="noctis.jpg"
+            alt="Figura Noctis"
+          />
+          <div class="text-center">
+            <h4>Figura Noctis</h4>
+            <p>Precio: USD$40.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Noctis', 40.00)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+          <img
+            class="img-fluid rounded img-thumbnail"
+            width="350"
+            src="ignis2.webp"
+            alt="Figura Noctis"
+          />
+          <div class="text-center">
+            <h4>Figura Ignis</h4>
+            <p>Precio: USD$30.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Ignis', 30.00)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+          <img
+            class="img-fluid rounded img-thumbnail"
+            width="350"
+            src="Mandaloriano.jpg"
+            alt="Figura Noctis"
+          />
+          <div class="text-center">
+            <h4>Figura Mandaloriano</h4>
+            <p>Precio: USD$50.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Mandaloriano', 50.00)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="col-lg-3 col-md-6 mb-3">
+          <img
+            class="img-fluid rounded img-thumbnail"
+            width="350"
+            src="bloodhound.webp"
+            alt="Figura Noctis"
+          />
+          <div class="text-center">
+            <h4>Figura Bloodhound</h4>
+            <p>Precio: USD$30.00</p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Figura Bloodhound', 30.00)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
+    <br /><br />
+    <footer class="text-primary" style="--bs-text-opacity: 0.4">
+      <p>
+        Brenda Escobedo, Pablo de Robles 2023. Todos los derechos reservados
+      </p>
+    </footer>
 
     <script>
-        function agregarAlCarrito(producto, precio) {
-            // Puedes implementar lógica para agregar el producto al carrito
-            console.log(`Producto agregado al carrito: ${producto} - Precio: $${precio}`);
-        }
+      function agregarAlCarrito(producto, precio) {
+        // Puedes implementar lógica para agregar el producto al carrito
+        console.log(
+          `Producto agregado al carrito: ${producto} - Precio: $${precio}`
+        );
+      }
     </script>
-</body>
+  </body>
 </html>

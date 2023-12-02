@@ -14,7 +14,27 @@ footer{
     background: rgb(57, 61, 69);
     width: auto;
     height: auto;
-    margin: 0px 50px;
+    margin: auto ;
     color: aliceblue;
+    font-size: large;
 }
 
+#carrusel{
+    background: rgb(57, 61, 69);
+    width: auto;
+    height: auto;
+    margin: auto ;
+}
+
+span{
+    font-style: oblique;
+    color: azure;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+a:hover{
+    transform: scale(1.1);
+}
